@@ -1,1 +1,1 @@
-# Roots-air-resistance
+# Root Finding and Realistic Projectile Motion
