@@ -1,1 +1,14 @@
 # Root Finding and Realistic Projectile Motion
+Assignment 1: In the root-finding.ipybn Jupyter notebook you will find an implementation of the bisection method. The notebook uses it to evaluate the square root of 2. Read carefully the program, try to run it with different parameters, see if there are Python commands that you can learn and reuse.
+* Following the description in the textbook, implement Newton's method for root finding. The routine should use as input a generic function and its derivative, returning the value of the root and the number of iterations. 
+* Use Newton's method to compute the square root of a number. How many iterations are required to achieve a given accuracy? How does the number of iterations with Newton's and bisection compare with each other? 
+* (Optional) For the specific case of the square root calculation, Newton's method can be implemented explicitly, meaning using the specific expressions for the function and its derivative. Try to implement the iterative calculation of the square root. 
+
+Assignment 2: In the linear-drag.ipynb Jupyter notebook or in a seperate Python program, run a linear-drag projectile motion simulation, compare the results with the analytic formula and use root-finders to compute its range. The notebook already implementation of the linear drag force, check if you understand all of it and then do the following:
+* Plot the y vs. x trajector of a baseball with linear drag, starting with the ball at the origin, initial speed of 30 m/s and a shooting angle of 30 degrees. Compare the results obtained using the numerical solvers with the analytic formula (Eq. 3.16 of the textbook).
+* Find the range of the motion by finding the roots of the analytic expression, using either the bisection or Newton's method. Compare these results with the range obtained from the ODE solver. 
+
+Assignment 3: (based on P3.8 of the textbook) In the baseball.ipynb Jupyter notebook or in a separate Python program, implement a simulation of a baseball subject to quadratic drag and Magnus force (but NOT the 3D tranverse case).
+* Complete the definition of the differential equations linked to the quadratic drag problem
+* Implement the differential equations for the case of variable drag coefficient and compare the results with the cases with constant drag and no drag.
+* (Optional) implement the most general simulation with Magnus force (Eq. 3.41 of the textbook). In order to reuse the previous code, just implement the case where the rotation axis is perpendicular to the xy plane, i.e. the Magnus force is still in the xy plane and the ball has no transverse motion. Compare the trajectories with spin with the ones with no Magnus force.
